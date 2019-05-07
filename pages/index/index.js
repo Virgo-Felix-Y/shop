@@ -4,12 +4,62 @@ const app = getApp()
 Page({
   data: {
     //TODO
-    dishesClassInfo: [{
-      name: '热菜',
+    dishesClassList: [{
+      name: '今日推荐',
+      id: '0'
+    }, {
+      name: '鲁菜',
       id: '1'
     }, {
-      name: '凉菜',
+      name: '川菜',
       id: '2'
+    }, {
+      name: '粤菜',
+      id: '3'
+    }, {
+      name: '闽菜',
+      id: '4'
+    }, {
+      name: '苏菜',
+      id: '5'
+    }, {
+      name: '浙菜',
+      id: '6'
+    }, {
+      name: '湘菜',
+      id: '7'
+    }, {
+      name: '徽菜',
+      id: '8'
+    }],
+    //TODO
+    dishesInfoList: [{
+      name: '干炸里脊',
+      id: '0'
+    }, {
+      name: '鱼香肉丝',
+      id: '1'
+    }, {
+      name: '糖醋鲤鱼',
+      id: '2'
+    }, {
+      name: '三文鱼',
+      id: '3'
+    }, {
+      name: '糖醋小排',
+      id: '4'
+    }, {
+      name: '鲷鱼',
+      id: '5'
+    }, {
+      name: '龙利鱼',
+      id: '6'
+    }, {
+      name: '馄钝',
+      id: '7'
+    }, {
+      name: '饺子',
+      id: '8'
     }],
     motto: 'Hello World',
     userInfo: {},
@@ -23,6 +73,28 @@ Page({
     wx.navigateTo({
       url: '../logs/logs'
     })
+  },
+  //TODO
+  getDishesByClassId: function(event) {
+    this.data.dishesInfoList = [{
+      name: '三文鱼',
+      id: '3'
+    }, {
+      name: '糖醋小排',
+      id: '4'
+    }, {
+      name: '鲷鱼',
+      id: '5'
+    }, {
+      name: '龙利鱼',
+      id: '6'
+    }, {
+      name: '馄钝',
+      id: '7'
+    }, {
+      name: '饺子',
+      id: '8'
+    }]
   },
   onLoad: function() {
     if (app.globalData.userInfo) {

@@ -21,19 +21,42 @@
   margin-top: 200px;
 }
 
-.scroll-view-item {
-  height: 200rpx;
-}
-.scroll-view_H{
+.section {
   display: flex;
-  white-space: nowrap; 
 }
+
+.scroll-view-item {
+  height: 100rpx;
+  flex-direction: column;
+  vertical-align: middle;
+}
+
+.class_list {
+  width: 20%;
+  border: 1px solid red;
+}
+
+.class_name {
+  width: 100%;
+  height: 80%;
+}
+
+.scroll-view_H {
+  display: flex;
+  white-space: nowrap;
+}
+
 .scroll-view-item_H {
   height: 100rpx;
   width: 300rpx;
   display: inline-block;
   text-align: center;
-  flex-direction: column; 
+  flex-direction: column;
+}
+
+.dishes_list {
+  width: 80%;
+  border: 1px solid red;
 }
 
 .bc_green {

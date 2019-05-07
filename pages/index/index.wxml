@@ -12,25 +12,30 @@
   </view> 
   </view>
   -->
-<!-- <view class="section">
-  <view class="section__title">vertical scroll</view>
-  <scroll-view scroll-y style="height: 200px;  white-space: nowrap;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
-    <view id="green" class="scroll-view-item bc_green"></view>
-    <view id="red" class="scroll-view-item bc_red"></view>
-    <view id="yellow" class="scroll-view-item bc_yellow"></view>
-    <view id="blue" class="scroll-view-item bc_blue"></view>
+<view class="section">
+  <scroll-view scroll-y class="class_list">
+    <view wx:for="{{dishesClassList}}" wx:key="id" wx:for-item="classTitle" id="class_{{classTitle.id}}" class="scroll-view-item" bindtap="getDishesByClassId">
+      {{classTitle.name}}
+    </view>
   </scroll-view>
 
-  <view class="btn-area">
+  <!-- <view class="btn-area">
     <button size="mini" bindtap="tap">click me to scroll into view</button>
     <button size="mini" bindtap="tapMove">click me to scroll</button>
-  </view>
-</view> -->
-<view class="section section_gap">
+  </view> -->
+  <scroll-view scroll-y class="dishes_list">
+    <view wx:for="{{dishesInfoList}}" wx:key="id" wx:for-item="classTitle" id="class_{{classTitle.id}}" class="scroll-view-item">
+      {{classTitle.name}}
+    </view>
+  </scroll-view>
+</view>
+
+<!-- <view class="section section_gap">
   <view class="dishes_class_title">欢迎光临</view>
   <scroll-view class="scroll-view_H" scroll-x>
     <view wx:for="{{dishesClassInfo}}" wx:for-item="classTitle" id="class_{{classTitle.id}}" class="scroll-view-item_H">
       {{classTitle.name}}
     </view>
-  </scroll-view>
+  </scroll-view> 
 </view>
+-->
