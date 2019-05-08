@@ -75,26 +75,29 @@ Page({
     })
   },
   //TODO
-  getDishesByClassId: function(event) {
-    this.data.dishesInfoList = [{
-      name: '三文鱼',
-      id: '3'
-    }, {
-      name: '糖醋小排',
-      id: '4'
-    }, {
-      name: '鲷鱼',
-      id: '5'
-    }, {
-      name: '龙利鱼',
-      id: '6'
-    }, {
-      name: '馄钝',
-      id: '7'
-    }, {
-      name: '饺子',
-      id: '8'
-    }]
+  getDishesByClassId: function(e) {
+    this.setData({
+      dishesInfoList: [{
+        name: '三文鱼',
+        id: '10'
+      }, {
+        name: '糖醋小排',
+        id: '11'
+      }, {
+        name: '鲷鱼',
+        id: '12'
+      }, {
+        name: '龙利鱼',
+        id: '13'
+      }, {
+        name: '馄钝',
+        id: '14'
+      }, {
+        name: '饺子',
+        id: '15'
+      }]
+    })
+    console.log(this.data.dishesInfoList)
   },
   onLoad: function() {
     if (app.globalData.userInfo) {
