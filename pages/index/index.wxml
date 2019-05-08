@@ -14,8 +14,8 @@
   -->
 <view class="section">
   <scroll-view scroll-y class="class_list">
-    <view wx:for="{{dishesClassList}}" wx:key="id" wx:for-item="classTitle" id="class_{{classTitle.id}}" class="scroll-view-item" bindtap="getDishesByClassId">
-      {{classTitle.name}}
+    <view wx:for="{{dishesClassList}}" wx:key="id" wx:for-item="classInfo" id="class_{{classInfo.id}}" class="scroll-view-item" bindtap="getDishesByClassId">
+      {{classInfo.name}}
     </view>
   </scroll-view>
 
@@ -24,9 +24,9 @@
     <button size="mini" bindtap="tapMove">click me to scroll</button>
   </view> -->
   <scroll-view scroll-y class="dishes_list">
-    <view wx:for="{{dishesInfoList}}" wx:key="id" wx:for-item="dishesTitle" id="dishes_{{dishesTitle.id}}" class="scroll-view-item" class='dishesFrame'>
-      <image>图</image>
-      <view> {{dishesTitle.name}}</view>
+    <view wx:for="{{dishesInfoList}}" wx:key="id" wx:for-item="dishesInfo" id="dishes_{{dishesInfo.id}}" class="scroll-view-item" class='dishesFrame'>
+      <image src='https://gss1.bdstatic.com/9vo3dSag_xI4khGkpoWK1HF6hhy/baike/c0=baike116,5,5,116,38/sign=c8851ee59422720e6fc3eaa81aa26123/14ce36d3d539b600fb81b430e550352ac75cb7ee.jpg'>图</image>
+      <view> {{dishesInfo.name}}</view>
       <view>简介</view>
       <button>加入购物车</button>
     </view>
